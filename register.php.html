@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Register - </title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+	
+<link rel="shortcut icon" href="favicon.ico.html"> 
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<style type="text/css">body {
+	background-color: #000;
+	background-image: url("images/layout/siteFooterPattern.png");
+}
+        </style>
+		<script type="text/javascript" src="js/jquery-1.9.1.js.html"></script>
+	</head>
+	<body>	
+
+<div id="login-form">
+<h1>Register</h1>
+<fieldset>
+
+	<form action="register.php.html" name="registration" method="post">
+		<div>
+		<input name="username" type="text" maxlength="18" placeholder="Login" value="" />
+		<input name="password1" type="password" placeholder="Password" />
+		<input name="password2" type="password" placeholder="Password (confirm)" />
+		<input name="email" type="text" maxlength="50" placeholder="E-Mail" value="" />
+		<input name="capcha" type="text" maxlength="5" placeholder="Code from the image" style="background:url('images/secure-404.jpg') right no-repeat #fff!important;" />
+		</div>
+		<input type="hidden" name="op" value="register"/>
+<input type="hidden" name="sha1" value="":/>
+	  <input name="sub" onclick="User.processRegistration()" type="submit" value="Register" />
+		<footer class="clearfix"><p><span class="info">&raquo;</span><a href="login.php.html">Login</a></p></footer>
+	</form>
+</fieldset>
+</div>
+
+	</body>
+</html>
